@@ -160,6 +160,8 @@ h6 {
 
 #header #logo img {
   padding: 0;
+  height: 65px;
+  width: 65px;
   margin: 0;
 }
 
@@ -706,6 +708,49 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 20px;
   }
 }
+/* Description
+-------------------------------*/
+#description {
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+}
+
+#description .p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+#description .class-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; 
+}
+
+/* Delivery
+-------------------------------*/
+#delivery .item{
+  display: block; /* Makes the entire item a block element, so it takes up the full width */
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08); /* Applies a soft shadow around the category item */
+  border: 1px solid transparent; /* Adds a border but makes it transparent initially */
+  transition: .5s; /* Adds a smooth transition effect for changes (like hover state) */
+}
+
+#delivery .title{
+  color: #319fb5;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#delivery .description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
 
 /* About Us Section
 --------------------------------*/
@@ -733,22 +778,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 10;
 }
 
-#about .about-col {
+#about .delivery {
   background: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
 }
 
-#about .about-col .img {
+#about .delivery .img {
   position: relative;
 }
 
-#about .about-col .img img {
+#about .delivery .img img {
   border-radius: 4px 4px 0 0;
 }
 
-#about .about-col .icon {
+#about .delivery .icon {
   width: 64px;
   height: 64px;
   padding-top: 8px;
@@ -763,22 +808,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#about .about-col i {
+#about .delivery i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
   transition: 0.3s;
 }
 
-#about .about-col:hover .icon {
+#about .delivery:hover .icon {
   background-color: #fff;
 }
 
-#about .about-col:hover i {
+#about .delivery:hover i {
   color: #319fb5;
 }
 
-#about .about-col h2 {
+#about .delivery h2 {
   color: #000;
   text-align: center;
   font-weight: 700;
@@ -787,11 +832,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 40px 0 12px 0;
 }
 
-#about .about-col h2 a {
+/* #about .about-col h2 {
   color: #000;
-}
+} */
 
-#about .about-col h2 a:hover {
+#about h2 {
   color: #319fb5;
 }
 
@@ -840,8 +885,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .description {
   font-size: 14px;
-  margin-left: 60px;
   line-height: 24px;
+  color: #333;
+  margin-left: 60px;
   margin-bottom: 0;
 }
 /* Call To Action Section
@@ -1230,7 +1276,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team {
   background: #fff;
-  /* padding: 60px 0; */
+  padding: 60px 0;
 }
 
 #team .member {
