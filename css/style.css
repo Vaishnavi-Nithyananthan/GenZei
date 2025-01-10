@@ -239,7 +239,7 @@ h6 {
 }
 
 #section-bg {
-  height: 550px; /* Define the section height */
+  height: 100vh; /* Define the section height */
   position: relative; /* Ensure proper positioning */
   overflow: hidden; /* Crop any overflowing content */
   background-size: cover; /* Ensure the image covers the section */
