@@ -40,6 +40,14 @@ h6 {
   padding: 0;
 }
 
+#logo img{
+  padding: 0;
+  margin: 1px;
+  margin-top: -60px;
+  height: 150px;
+  width: 150px;
+  /* border-radius: 50%; */
+}
 /* Back to top button */
 
 .back-to-top {
@@ -137,33 +145,6 @@ h6 {
   transition: all 0.5s;
 }
 
-#header #logo {
-  float: left;
-}
-
-#header #logo h1 {
-  font-size: 34px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-  padding-left: 10px;
-  border-left: 4px solid #57faef;
-}
-
-#header #logo img {
-  padding: 0;
-  height: 65px;
-  width: 65px;
-  margin: 0;
-}
 
 /*--------------------------------------------------------------
 # Home Section
@@ -507,9 +488,10 @@ h6 {
 
 #nav-menu-container {
   display: flex;
+  margin-left: -50px;
+  margin-right: 120px;
   justify-content: center; /* Center horizontally */
-  align-items: center; 
-  margin: 0;
+  align-items: center;  
 }
 
 /* h3 styling */
@@ -804,7 +786,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #introduction h2, h3 {
   font-weight: 700;
-  color: #18d26e; /* Accent color */
+  color: #fff; /* Accent color */
   margin-bottom: 20px;
 }
 
@@ -885,6 +867,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+#description .h3{
+  color: #fff;
 }
 
 #description .carousel-item::before {
@@ -1678,9 +1663,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #contact {
-  background-color: #000;
+  background-color: #fff;
   padding: 60px 0;
   display: flex;
+}
+#contact .section-header h3{
+  color: #000;
+}
+#contact .contact-info address{
+  font-size: 12px;
 }
 
 #contact .contact-info {
@@ -1698,7 +1689,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #fff;
+  color: #000;
 }
 
 #contact .contact-info h3 {
@@ -1706,15 +1697,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 
 #contact .contact-info a {
-  color: #fff;
+  color: #000;
 }
 
 #contact .contact-info a:hover {
   color: #57faef;
+}
+
+#contact-address address{
+  font-size: 20px;
 }
 
 #contact .contact-address,
@@ -1920,9 +1915,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 1024px) {
-  #header #logo {
-    padding-left: 60px;
-  }
 
   #intro p {
     width: 60%;
@@ -1943,12 +1935,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: 15px;
   }
 
-  #header #logo h1 {
-    font-size: 28px;
-  }
-
   #header #logo img {
-    max-height: 40px;
+    max-height: 150px;
   }
 
   #intro h2 {
